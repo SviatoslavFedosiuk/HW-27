@@ -1,0 +1,54 @@
+.menu {
+    width: 300px;
+    height: 500px;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: -250px;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+}
+.link:hover{
+    color: orange;
+}
+
+.text {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 200;
+    color: #fff;
+    position: absolute;
+    right: -80px;
+    transform: rotate(90deg);
+}
+
+.menu:hover {
+    left: 0px;
+    .text{
+        opacity: 0;
+    }
+}
+.item::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    outline: 5px solid black;
+    display: inline-block;
+    margin-left: 30px;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
